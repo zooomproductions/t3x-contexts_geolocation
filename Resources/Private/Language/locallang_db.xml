@@ -8,10 +8,12 @@
     <languageKey index="default" type="array">
       <label index="title_continent">Continent</label>
       <label index="title_country">Country</label>
+      <label index="title_distance">Distance</label>
     </languageKey>
     <languageKey index="de" type="array">
       <label index="title_continent">Kontinent</label>
       <label index="title_country">Land</label>
+      <label index="title_distance">Entfernung</label>
     </languageKey>
   </data>
 </T3locallang>

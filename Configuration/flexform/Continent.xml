@@ -8,7 +8,7 @@
    <el>
      <field_continents>
        <TCEforms>
-         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:country.field_continents</label>
+         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:continent.field_continents</label>
          <config>
            <type>select</type>
            <items type="array">

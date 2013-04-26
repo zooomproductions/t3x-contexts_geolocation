@@ -10,5 +10,7 @@ return array(
         => $extensionClassesPath . 'Context/Type/Continent.php',
     'tx_contexts_geolocation_context_type_country'
         => $extensionClassesPath . 'Context/Type/Country.php',
+    'tx_contexts_geolocation_context_type_distance'
+        => $extensionClassesPath . 'Context/Type/Distance.php',
 );
 ?>

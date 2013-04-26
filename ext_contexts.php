@@ -26,5 +26,11 @@ Tx_Contexts_Api_Configuration::registerContextType(
     'Tx_Contexts_Geolocation_Context_Type_Continent',
     'FILE:EXT:contexts_geolocation/Configuration/flexform/Continent.xml'
 );
+Tx_Contexts_Api_Configuration::registerContextType(
+    'geolocation_distance',
+    'LLL:EXT:contexts_geolocation/Resources/Private/Language/locallang_db.xml:title_distance',
+    'Tx_Contexts_Geolocation_Context_Type_Distance',
+    'FILE:EXT:contexts_geolocation/Configuration/flexform/Distance.xml'
+);
 
 ?>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<T3DataStructure>
+ <meta>
+  <langDisable>1</langDisable>
+ </meta>
+ <ROOT>
+   <type>array</type>
+   <el>
+     <field_distance>
+       <TCEforms>
+         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:distance.field_distance</label>
+         <config>
+           <type>input</type>
+           <size>10</size>
+           <eval>trim,required</eval>
+         </config>
+       </TCEforms>
+     </field_distance>
+
+     <field_position>
+       <TCEforms>
+         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:distance.field_position</label>
+         <config>
+           <type>input</type>
+           <size>40</size>
+           <eval>trim,required</eval>
+         </config>
+       </TCEforms>
+     </field_position>
+
+     <field_use_session>
+       <TCEforms>
+         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:field_use_session</label>
+         <config>
+           <type>check</type>
+           <default>1</default>
+         </config>
+       </TCEforms>
+     </field_use_session>
+
+   </el>
+ </ROOT>
+</T3DataStructure>

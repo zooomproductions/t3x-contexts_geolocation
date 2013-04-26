@@ -6,12 +6,16 @@
   </meta>
   <data type="array">
     <languageKey index="default" type="array">
-      <label index="country.field_continents">Continents</label>
+      <label index="continent.field_continents">Continents</label>
       <label index="country.field_countries">Countries</label>
+      <label index="distance.field_distance">Distance (km)</label>
+      <label index="distance.field_position">Position (lat, long)</label>
     </languageKey>
     <languageKey index="de" type="array">
-      <label index="country.field_continents">Kontinente</label>
+      <label index="continent.field_continents">Kontinente</label>
       <label index="country.field_countries">Länder</label>
+      <label index="distance.field_distance">Entfernung (km)</label>
+      <label index="distance.field_position">Position (lat, long)</label>
     </languageKey>
   </data>
 </T3locallang>
