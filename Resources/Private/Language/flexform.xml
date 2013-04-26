@@ -6,12 +6,12 @@
   </meta>
   <data type="array">
     <languageKey index="default" type="array">
+      <label index="country.field_continents">Continents</label>
       <label index="country.field_countries">Countries</label>
-      <label index="field_use_session">Store in session</label>
     </languageKey>
     <languageKey index="de" type="array">
+      <label index="country.field_continents">Kontinente</label>
       <label index="country.field_countries">Länder</label>
-      <label index="field_use_session">In Session speichern</label>
     </languageKey>
   </data>
 </T3locallang>

@@ -6,9 +6,11 @@
   </meta>
   <data type="array">
     <languageKey index="default" type="array">
+      <label index="title_continent">Continent</label>
       <label index="title_country">Country</label>
     </languageKey>
     <languageKey index="de" type="array">
+      <label index="title_continent">Kontinent</label>
       <label index="title_country">Land</label>
     </languageKey>
   </data>
