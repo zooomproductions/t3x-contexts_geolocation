@@ -100,7 +100,7 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
      *
      * @param float $latitude1  Latitude of first point
      * @param float $longitude1 Longitude of first point
-     * @param float $latitude1  Latitude of second point
+     * @param float $latitude2  Latitude of second point
      * @param float $longitude2 Longitude of second point
      *
      * @return float Distance in kilometers
