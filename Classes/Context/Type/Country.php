@@ -77,8 +77,7 @@ class Tx_Contexts_Geolocation_Context_Type_Country
         $arCountries = explode(',', $strCountries);
 
         $strCountry = geoip_country_code3_by_name(
-            '178.25.73.122'
-            //$_SERVER['REMOTE_ADDR']
+            $_SERVER['REMOTE_ADDR']
         );
 
         if ($strCountry === false && in_array('*unknown*', $arCountries)) {
