@@ -24,6 +24,8 @@
            <type>input</type>
            <size>40</size>
            <eval>trim,required</eval>
+           <form_type>user</form_type>
+           <userFunc>Tx_Contexts_Geolocation_Backend-&gt;inputMapPosition</userFunc>
          </config>
        </TCEforms>
      </field_position>
