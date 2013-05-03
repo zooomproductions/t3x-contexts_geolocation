@@ -6,7 +6,7 @@ countries, continents or within a given area.
 
 It uses the `Maxmind GeoIP`__ database to determine the user's probable
 physical location.
-Note that this often work most of the time, but also fails regularly.
+Note that this is working most of the time, but also fails regularly.
 
 Country and Continent rules are pretty safe to use, while small distances
 are not accurate at all.
