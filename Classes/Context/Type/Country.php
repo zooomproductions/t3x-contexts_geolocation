@@ -46,12 +46,12 @@ class Tx_Contexts_Geolocation_Context_Type_Country
     {
         list($bUseMatch, $bMatch) = $this->getMatchFromSession();
         if ($bUseMatch) {
-            return $bMatch;
+            return $this->invert($bMatch);
         }
 
-        return $this->storeInSession(
+        return $this->invert($this->storeInSession(
             $this->matchCountries()
-        );
+        ));
     }
 
     /**
