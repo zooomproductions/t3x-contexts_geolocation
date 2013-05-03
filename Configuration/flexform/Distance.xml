@@ -32,7 +32,7 @@
 
      <field_use_session>
        <TCEforms>
-         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:field_use_session</label>
+         <label>LLL:EXT:contexts/Resources/Private/Language/flexform.xml:field_use_session</label>
          <config>
            <type>check</type>
            <default>1</default>
