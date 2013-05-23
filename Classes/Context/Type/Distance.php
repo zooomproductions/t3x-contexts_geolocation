@@ -70,14 +70,16 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
                 'geoip PHP extension is not installed'
             );
         }
+
+        $bUnknown = (bool) $this->getConfValue('field_unknown');
         $arPosition = geoip_record_by_name($_SERVER['REMOTE_ADDR']);
         if ($arPosition === false) {
             //unknown position
-            return false;
+            return $bUnknown;
         }
         if ($arPosition['latitude'] == 0 && $arPosition['longitude'] == 0) {
             //broken position
-            return false;
+            return $bUnknown;
         }
 
         $strPosition = trim($this->getConfValue('field_position'));

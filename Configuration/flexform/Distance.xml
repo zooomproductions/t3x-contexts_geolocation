@@ -40,6 +40,16 @@
        </TCEforms>
      </field_position>
 
+     <field_unknown>
+       <TCEforms>
+         <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:distance.field_unknown</label>
+         <config>
+           <type>check</type>
+           <default>0</default>
+         </config>
+       </TCEforms>
+     </field_unknown>
+
      <field_use_session>
        <TCEforms>
          <label>LLL:EXT:contexts/Resources/Private/Language/flexform.xml:field_use_session</label>
