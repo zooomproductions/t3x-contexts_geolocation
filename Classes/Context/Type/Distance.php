@@ -49,9 +49,11 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
             return $this->invert($bMatch);
         }
 
-        return $this->invert($this->storeInSession(
-            $this->matchDistance()
-        ));
+        return $this->invert(
+            $this->storeInSession(
+                $this->matchDistance()
+            )
+        );
     }
 
     /**
@@ -80,7 +82,7 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
 
         $strPosition = trim($this->getConfValue('field_position'));
         $strMaxDistance = trim($this->getConfValue('field_distance'));
-        if ($strPosition == '' || $strDistance == '') {
+        if ($strPosition == '' || $strMaxDistance == '') {
             //nothing configured? no match.
             return false;
         }
