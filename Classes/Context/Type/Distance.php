@@ -66,9 +66,8 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
     public function matchDistance()
     {
         if (!function_exists('geoip_record_by_name')) {
-            throw new Exception(
-                'geoip PHP extension is not installed'
-            );
+            //we show an error in backend when configuring the context
+            return false;
         }
 
         $bUnknown = (bool) $this->getConfValue('field_unknown');

@@ -64,9 +64,8 @@ class Tx_Contexts_Geolocation_Context_Type_Continent
     public function matchContinents()
     {
         if (!function_exists('geoip_continent_code_by_name')) {
-            throw new Exception(
-                'geoip PHP extension is not installed'
-            );
+            //we show an error in backend when configuring the context
+            return false;
         }
 
         $strContinents = trim($this->getConfValue('field_continents'));

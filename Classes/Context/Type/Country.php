@@ -64,9 +64,8 @@ class Tx_Contexts_Geolocation_Context_Type_Country
     public function matchCountries()
     {
         if (!function_exists('geoip_country_code3_by_name')) {
-            throw new Exception(
-                'geoip PHP extension is not installed'
-            );
+            //we show an error in backend when configuring the context
+            return false;
         }
 
         $strCountries = trim($this->getConfValue('field_countries'));
