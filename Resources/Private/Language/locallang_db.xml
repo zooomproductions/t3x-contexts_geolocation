@@ -9,11 +9,13 @@
       <label index="title_continent">Continent</label>
       <label index="title_country">Country</label>
       <label index="title_distance">Distance</label>
+      <label index="tt_content.list_type_contextsgeolocation_position">Contexts geolocation: show current position</label>
     </languageKey>
     <languageKey index="de" type="array">
       <label index="title_continent">Kontinent</label>
       <label index="title_country">Land</label>
       <label index="title_distance">Entfernung</label>
+      <label index="tt_content.list_type_contextsgeolocation_position">Contexts Geolokalisierung: Aktuelle Position</label>
     </languageKey>
   </data>
 </T3locallang>

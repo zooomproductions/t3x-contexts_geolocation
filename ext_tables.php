@@ -17,4 +17,13 @@ if (TYPO3_MODE === 'BE') {
     // All other modes did load it already
     include_once t3lib_extMgm::extPath($_EXTKEY) . 'ext_contexts.php';
 }
+
+t3lib_extMgm::addPlugin(
+    array(
+        'LLL:EXT:contexts_geolocation/Resources/Private/Language/locallang_db.xml:tt_content.list_type_contextsgeolocation_position',
+        $_EXTKEY . '_position'
+    ),
+    'list_type'
+);
+
 ?>
