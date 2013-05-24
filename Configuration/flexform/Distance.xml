@@ -6,16 +6,6 @@
  <ROOT>
    <type>array</type>
    <el>
-     <field_invert>
-       <TCEforms>
-         <label>LLL:EXT:contexts/Resources/Private/Language/flexform.xml:field_invert</label>
-         <config>
-           <type>check</type>
-           <default>0</default>
-         </config>
-       </TCEforms>
-     </field_invert>
-
      <field_distance>
        <TCEforms>
          <label>LLL:EXT:contexts_geolocation/Resources/Private/Language/flexform.xml:distance.field_distance</label>
@@ -49,16 +39,6 @@
          </config>
        </TCEforms>
      </field_unknown>
-
-     <field_use_session>
-       <TCEforms>
-         <label>LLL:EXT:contexts/Resources/Private/Language/flexform.xml:field_use_session</label>
-         <config>
-           <type>check</type>
-           <default>1</default>
-         </config>
-       </TCEforms>
-     </field_use_session>
 
      <field_setupCheck>
        <TCEforms>
