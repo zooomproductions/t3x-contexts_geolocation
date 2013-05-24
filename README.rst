@@ -24,6 +24,7 @@ Setup
 Dependencies
 ============
 - ``contexts`` TYPO3 extension
+- ``static_info_tables`` TYPO3 extension
 - ``geoip`` PHP extension, see `its homepage`__
 
 __ http://pecl.php.net/package/geoip
