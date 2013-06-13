@@ -59,4 +59,4 @@ the user's location is within this area.
 Note that the free geoip database does seldom give you exact locations,
 so this is more a fun experiment rather that it should be used in production.
 
-.. image:: Images/cfg-distance.png
+.. image:: doc/cfg-distance.png
