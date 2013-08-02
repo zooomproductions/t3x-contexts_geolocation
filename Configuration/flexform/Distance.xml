@@ -12,7 +12,7 @@
          <config>
            <type>input</type>
            <size>10</size>
-           <eval>trim,required</eval>
+           <eval>trim,required,int</eval>
          </config>
        </TCEforms>
      </field_distance>
