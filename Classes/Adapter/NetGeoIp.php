@@ -104,9 +104,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     }
 
     /**
-     * Get two-letter continent code. Returns FALSE on failure.
+     * Get two-letter continent code
      *
-     * @return string|false
+     * @return string|false Continent code or FALSE on failure
      */
     public function getContinentCode()
     {
@@ -120,11 +120,11 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     }
 
     /**
-     * Get two or three letter country code. Returns FALSE on failure.
+     * Get two or three letter country code
      *
      * @param boolean $threeLetterCode TRUE to return 3-letter country code
      *
-     * @return string|false
+     * @return string|false Country code or FALSE on failure
      */
     public function getCountryCode($threeLetterCode = false)
     {
@@ -142,9 +142,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     }
 
     /**
-     * Get country name. Returns FALSE on failure.
+     * Get country name
      *
-     * @return string|false
+     * @return string|false Country name or FALSE on failure
      */
     public function getCountryName()
     {
@@ -156,9 +156,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     }
 
     /**
-     * Get location record. Returns FALSE on failure.
+     * Get location record
      *
-     * @return array|false
+     * @return array|false Location data or FALSE on failure
      */
     public function getLocation()
     {
@@ -170,10 +170,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     }
 
     /**
-     * Get country code and region. Required an non-free region database.
-     * Returns FALSE on failure.
+     * Get country code and region. Requires an non-free region database.
      *
-     * @return array|false
+     * @return array|false Region data or FALSE on failure
      */
     public function getRegion()
     {
@@ -183,10 +182,10 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
 
     /**
      * Get name of organization or of the ISP which has registered the
-     * IP address range. Requires an non-free organisation database.
-     * Returns FALSE on failure.
+     * IP address range.
+     * Requires an non-free organisation database.
      *
-     * @return string|false
+     * @return string|false Organization name or FALSE on failure
      */
     public function getOrganization()
     {

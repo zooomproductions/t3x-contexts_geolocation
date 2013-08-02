@@ -1,5 +1,5 @@
 # *****************************************************
-# Extension configuration for contexts_wurfl
+# Extension configuration for contexts_geolocation
 #
 # Author: Rico Sonntag <rico.sonntag@netresearch.de>
 # *****************************************************
