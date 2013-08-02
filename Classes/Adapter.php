@@ -43,49 +43,23 @@ abstract class Tx_Contexts_Geolocation_Adapter
     {
         static $instance = null;
 
-        if ($instance === null) {
-            $adapters = self::getAdapters();
-
-            // Loop through all adapters and load the first available one
-            foreach (self::getAdapters() as $adapter) {
-                $class    = 'Tx_Contexts_Geolocation_Adapter_' . $adapter;
-                $instance = $class::getInstance($ip);
-
-                if ($instance !== null) {
-                    break;
-                }
-            }
-
-            if ($instance === null) {
-                throw new Tx_Contexts_Geolocation_Exception(
-                    'No installed geoip adapter found'
-                );
-            }
+        if ($instance !== null) {
+            return $instance;
         }
 
-        return $instance;
-    }
-
-    /**
-     * Get a list of available adapters.
-     *
-     * @return array
-     */
-    protected static function getAdapters()
-    {
-        $adapters = array();
-
-        foreach (new DirectoryIterator(__DIR__ . '/Adapter') as $fileInfo) {
-            if ($fileInfo->isDot()) {
-                continue;
-            }
-
-            $adapters[] = $fileInfo->getBasename('.php');
+        $instance = Tx_Contexts_Geolocation_Adapter_GeoIp::getInstance($ip);
+        if ($instance !== null) {
+            return $instance;
         }
 
-        sort($adapters);
+        $instance = Tx_Contexts_Geolocation_Adapter_NetGeoIp::getInstance($ip);
+        if ($instance !== null) {
+            return $instance;
+        }
 
-        return $adapters;
+        throw new Tx_Contexts_Geolocation_Exception(
+            'No installed geoip adapter found'
+        );
     }
 
     /**

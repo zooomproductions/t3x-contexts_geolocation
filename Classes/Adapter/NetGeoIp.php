@@ -58,7 +58,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
         );
 
         $dbPath = null;
-        if (isset($extConfig['geoLiteDatabase'])) {
+        if (isset($extConfig['geoLiteDatabase'])
+            && $extConfig['geoLiteDatabase'] != ''
+        ) {
             if (is_dir($extConfig['geoLiteDatabase'])) {
                 $dbPath = $extConfig['geoLiteDatabase'];
             } else if (is_dir(PATH_site . $extConfig['geoLiteDatabase'])) {
