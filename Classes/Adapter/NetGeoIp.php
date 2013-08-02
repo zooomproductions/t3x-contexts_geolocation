@@ -46,6 +46,9 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
      * @param string $ip IP address
      *
      * @return void
+     *
+     * @throws Tx_Contexts_Geolocation_Exception When the database cannot
+     *         be found
      */
     private function __construct($ip = null)
     {
@@ -54,8 +57,21 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
             $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['contexts_geolocation']
         );
 
-        // Get path to geolite database
-        $dbPath = PATH_site . ltrim($extConfig['geoLiteDatabase'], '/');
+        $dbPath = null;
+        if (isset($extConfig['geoLiteDatabase'])) {
+            if (is_dir($extConfig['geoLiteDatabase'])) {
+                $dbPath = $extConfig['geoLiteDatabase'];
+            } else if (is_dir(PATH_site . $extConfig['geoLiteDatabase'])) {
+                $dbPath = PATH_site . $extConfig['geoLiteDatabase'];
+            }
+        } else if (is_dir('/usr/share/GeoIP')) {
+            $dbPath = '/usr/share/GeoIP/';
+        }
+        if ($dbPath === null) {
+            throw new Tx_Contexts_Geolocation_Exception(
+                'Configured geoiop database path does not exist'
+            );
+        }
 
         $this->geoLiteCountry = Net_GeoIP::getInstance($dbPath . 'GeoIP.dat');
         $this->geoLiteCity    = Net_GeoIP::getInstance($dbPath . 'GeoLiteCity.dat');
