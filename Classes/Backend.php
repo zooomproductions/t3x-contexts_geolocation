@@ -209,27 +209,26 @@ HTM;
     }
 
     /**
-     * Check if the extension has been setup properly
+     * Check if the extension has been setup properly.
+     * Renders a flash message when geoip is not available.
      *
      * @return void
      */
     public function setupCheck()
     {
-        if (extension_loaded('geoip')) {
-            return;
+        try {
+            Tx_Contexts_Geolocation_Adapter::getInstance();
+        } catch (Tx_Contexts_Geolocation_Exception $exception) {
+            t3lib_FlashMessageQueue::addMessage(
+                t3lib_div::makeInstance(
+                    't3lib_FlashMessage',
+                    'The "<tt>geoip</tt>" PHP extension is not available.'
+                    . ' Geolocation contexts will not work.',
+                    'Geolocation configuration',
+                    t3lib_FlashMessage::ERROR
+                )
+            );
         }
-
-        t3lib_FlashMessageQueue::addMessage(
-            t3lib_div::makeInstance(
-                't3lib_FlashMessage',
-                'The "<tt>geoip</tt>" PHP extension is not available.'
-                . ' Geolocation contexts will not work.',
-                'Geolocation configuration',
-                t3lib_FlashMessage::ERROR
-            )
-        );
-
-        return null;
     }
 }
 ?>
