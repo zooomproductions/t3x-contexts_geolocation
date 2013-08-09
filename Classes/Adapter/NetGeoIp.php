@@ -47,7 +47,7 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
      *
      * @return void
      *
-     * @throws Tx_Contexts_Geolocation_Exception When the database cannot
+     * @throws Tx_Contexts_Geolocation_Exception when the database cannot
      *         be found
      */
     private function __construct($ip = null)
@@ -58,20 +58,24 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
         );
 
         $dbPath = null;
+
         if (isset($extConfig['geoLiteDatabase'])
-            && $extConfig['geoLiteDatabase'] != ''
+            && !empty($extConfig['geoLiteDatabase'])
         ) {
+            $geoLiteDatabasePath = ltrim($extConfig['geoLiteDatabase'], '/');
+
             if (is_dir($extConfig['geoLiteDatabase'])) {
                 $dbPath = $extConfig['geoLiteDatabase'];
-            } else if (is_dir(PATH_site . $extConfig['geoLiteDatabase'])) {
-                $dbPath = PATH_site . $extConfig['geoLiteDatabase'];
+            } elseif (is_dir(PATH_site . $geoLiteDatabasePath)) {
+                $dbPath = PATH_site . $geoLiteDatabasePath;
             }
-        } else if (is_dir('/usr/share/GeoIP')) {
+        } elseif (is_dir('/usr/share/GeoIP')) {
             $dbPath = '/usr/share/GeoIP/';
         }
+
         if ($dbPath === null) {
             throw new Tx_Contexts_Geolocation_Exception(
-                'Configured geoiop database path does not exist'
+                'Configured geoip database path does not exist'
             );
         }
 
