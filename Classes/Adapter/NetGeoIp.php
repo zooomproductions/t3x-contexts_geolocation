@@ -153,9 +153,10 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
         try {
             // Net_GeoIP provides no method to return 3-letter-code
             if ($threeLetterCode) {
-                $loc = $this->geoLiteCity->lookupLocation($this->ip);
-                if ($loc) {
-                    $data = $loc->getData();
+                $location = $this->geoLiteCity->lookupLocation($this->ip);
+
+                if ($location instanceof Net_GeoIP_Location) {
+                    $data = $location->getData();
                     return $data['countryCode3'];
                 }
                 return false;
@@ -189,9 +190,10 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
     public function getLocation()
     {
         try {
-            $loc = $this->geoLiteCity->lookupLocation($this->ip);
-            if ($loc) {
-                return $loc->getData();
+            $location = $this->geoLiteCity->lookupLocation($this->ip);
+
+            if ($location instanceof Net_GeoIP_Location) {
+                return $location->getData();
             }
         } catch (Exception $exception) {
             return false;
