@@ -65,7 +65,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
     }
 
     /**
-     * Get two-letter continent code
+     * Get two-letter continent code.
      *
      * @return string|false Continent code or FALSE on failure
      */
@@ -75,7 +75,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
     }
 
     /**
-     * Get two or three letter country code
+     * Get two or three letter country code.
      *
      * @param boolean $threeLetterCode TRUE to return 3-letter country code
      *
@@ -91,7 +91,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
     }
 
     /**
-     * Get country name
+     * Get country name.
      *
      * @return string|false Country name or FALSE on failure
      */
@@ -101,7 +101,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
     }
 
     /**
-     * Get location record
+     * Get location record.
      *
      * @return array|false Location data or FALSE on failure
      */
@@ -126,7 +126,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
     }
 
     /**
-     * Get country code and region
+     * Get country code and region.
      *
      * @return array|false Region data or FALSE on failure
      */
@@ -137,7 +137,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
 
     /**
      * Get name of organization or of the ISP which has registered the
-     * IP address range
+     * IP address range.
      *
      * @return string|false Organization name or FALSE on failure
      */

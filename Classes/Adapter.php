@@ -63,14 +63,14 @@ abstract class Tx_Contexts_Geolocation_Adapter
     }
 
     /**
-     * Get two-letter continent code
+     * Get two-letter continent code.
      *
      * @return string|false Continent code or FALSE on failure
      */
     abstract public function getContinentCode();
 
     /**
-     * Get two or three letter country code
+     * Get two or three letter country code.
      *
      * @param boolean $threeLetterCode TRUE to return 3-letter country code
      *
@@ -79,21 +79,21 @@ abstract class Tx_Contexts_Geolocation_Adapter
     abstract public function getCountryCode($threeLetterCode = false);
 
     /**
-     * Get country name
+     * Get country name.
      *
      * @return string|false Country name or FALSE on failure
      */
     abstract public function getCountryName();
 
     /**
-     * Get location record
+     * Get location record.
      *
      * @return array|false Location data or FALSE on failure
      */
     abstract public function getLocation();
 
     /**
-     * Get country code and region
+     * Get country code and region.
      *
      * @return array|false Region data or FALSE on failure
      */
@@ -101,7 +101,7 @@ abstract class Tx_Contexts_Geolocation_Adapter
 
     /**
      * Get name of organization or of the ISP which has registered the
-     * IP address range
+     * IP address range.
      *
      * @return string|false Organization name or FALSE on failure
      */
