@@ -1,14 +1,14 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "contexts_geolocation".
-#
-# Auto generated 07-06-2013 16:06
-#
-# Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
-########################################################################
+/***************************************************************
+ * Extension Manager/Repository config file for ext "contexts_geolocation".
+ *
+ * Auto generated 16-08-2013 15:07
+ *
+ * Manual updates:
+ * Only the data in the array - everything else is removed by next
+ * writing. "version" and "dependencies" must not be touched!
+ ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Multi-channel contexts: Geolocation',
@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 1,
 	'lockType' => '',
 	'author_company' => 'Netresearch GmbH & Co.KG',
-	'version' => '0.2.2',
+	'version' => '0.3.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '4.5.0-6.2.99',
@@ -41,7 +41,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:19:{s:9:"ChangeLog";s:4:"1aa1";s:16:"ext_autoload.php";s:4:"e2ed";s:16:"ext_contexts.php";s:4:"665f";s:12:"ext_icon.gif";s:4:"e433";s:17:"ext_localconf.php";s:4:"fef1";s:14:"ext_tables.php";s:4:"4aa3";s:19:"Classes/Backend.php";s:4:"694f";s:34:"Classes/Context/Type/Continent.php";s:4:"b2e4";s:32:"Classes/Context/Type/Country.php";s:4:"0e96";s:33:"Classes/Context/Type/Distance.php";s:4:"3fd9";s:36:"Configuration/flexform/Continent.xml";s:4:"dcd7";s:34:"Configuration/flexform/Country.xml";s:4:"6c20";s:35:"Configuration/flexform/Distance.xml";s:4:"2b25";s:23:"Documentation/Index.rst";s:4:"1487";s:37:"Documentation/Images/cfg-distance.png";s:4:"4945";s:39:"Resources/Private/Language/flexform.xml";s:4:"3d3b";s:43:"Resources/Private/Language/locallang_db.xml";s:4:"e31a";s:14:"doc/manual.sxw";s:4:"4611";s:44:"pi/class.tx_contextsgeolocation_position.php";s:4:"e058";}',
+	'_md5_values_when_last_written' => 'a:33:{s:9:"ChangeLog";s:4:"a297";s:16:"ext_autoload.php";s:4:"37ca";s:21:"ext_conf_template.txt";s:4:"ab52";s:16:"ext_contexts.php";s:4:"665f";s:12:"ext_icon.gif";s:4:"e433";s:17:"ext_localconf.php";s:4:"fef1";s:14:"ext_tables.php";s:4:"4aa3";s:11:"README.html";s:4:"e74c";s:10:"README.rst";s:4:"8419";s:12:"Settings.yml";s:4:"1ff9";s:19:"Classes/Adapter.php";s:4:"28ed";s:19:"Classes/Backend.php";s:4:"4795";s:21:"Classes/Exception.php";s:4:"fd4e";s:25:"Classes/Adapter/GeoIp.php";s:4:"4a63";s:28:"Classes/Adapter/NetGeoIp.php";s:4:"c4c7";s:34:"Classes/Context/Type/Continent.php";s:4:"d172";s:32:"Classes/Context/Type/Country.php";s:4:"9d2a";s:33:"Classes/Context/Type/Distance.php";s:4:"fa86";s:36:"Configuration/flexform/Continent.xml";s:4:"dcd7";s:34:"Configuration/flexform/Country.xml";s:4:"6c20";s:35:"Configuration/flexform/Distance.xml";s:4:"35af";s:39:"Resources/Private/Language/flexform.xml";s:4:"3d3b";s:43:"Resources/Private/Language/locallang_db.xml";s:4:"e31a";s:47:"Resources/Public/JavaScript/Leaflet/leaflet.css";s:4:"8ae0";s:50:"Resources/Public/JavaScript/Leaflet/leaflet.ie.css";s:4:"db9b";s:46:"Resources/Public/JavaScript/Leaflet/leaflet.js";s:4:"df34";s:53:"Resources/Public/JavaScript/Leaflet/images/layers.png";s:4:"2ba2";s:58:"Resources/Public/JavaScript/Leaflet/images/marker-icon.png";s:4:"87f6";s:61:"Resources/Public/JavaScript/Leaflet/images/marker-icon@2x.png";s:4:"1c82";s:60:"Resources/Public/JavaScript/Leaflet/images/marker-shadow.png";s:4:"e7bd";s:20:"doc/cfg-distance.png";s:4:"4945";s:14:"doc/manual.sxw";s:4:"4611";s:44:"pi/class.tx_contextsgeolocation_position.php";s:4:"82b4";}',
 	'suggests' => array(
 	),
 );
