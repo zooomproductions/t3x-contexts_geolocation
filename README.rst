@@ -17,7 +17,9 @@ __ http://www.maxmind.com/en/geolocation_landing
 =====
 Setup
 =====
-#. Install PHP extension ``geoip``, e.g. via PEAR or Pyrus
+#. Install the PHP extension ``geoip`` (requires root access to the server)
+
+   If that is not possible, install the ``Net_GeoIP`` package from PEAR
 #. Install and activate this TYPO3 extension ``contexts_geolocation``
 
 
@@ -26,9 +28,10 @@ Dependencies
 - ``contexts`` TYPO3 extension
 - ``static_info_tables`` TYPO3 extension
 - ``geoip`` PHP extension, see `its homepage`__
+- or `Net_GeoIP`__ from PEAR instead of ``geoip``
 
 __ http://pecl.php.net/package/geoip
-
+__ http://pear.php.net/package/Net_GeoIP
 
 
 =============
