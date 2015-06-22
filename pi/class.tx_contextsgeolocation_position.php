@@ -75,7 +75,7 @@ class tx_contextsgeolocation_position extends tslib_pibase
     public function main($strContent, $arConf)
     {
         $ip    = $this->getIp();
-        $geoip = Tx_Contexts_Geolocation_Adapter::getInstance($ip);
+        $geoip = Tx_ContextsGeolocation_Adapter::getInstance($ip);
         $data  = $geoip->getLocation();
 
         return $this->pi_wrapInBaseClass(

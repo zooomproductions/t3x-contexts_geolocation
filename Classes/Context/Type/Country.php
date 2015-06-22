@@ -32,7 +32,7 @@
  * @license    http://opensource.org/licenses/gpl-license GPLv2 or later
  * @link       http://github.com/netresearch/contexts_geolocation
  */
-class Tx_Contexts_Geolocation_Context_Type_Country
+class Tx_ContextsGeolocation_Context_Type_Country
     extends Tx_Contexts_Context_Abstract
 {
     /**
@@ -71,7 +71,7 @@ class Tx_Contexts_Geolocation_Context_Type_Country
                 return false;
             }
 
-            $geoip = Tx_Contexts_Geolocation_Adapter
+            $geoip = Tx_ContextsGeolocation_Adapter
                 ::getInstance($_SERVER['REMOTE_ADDR']);
 
             $arCountries = explode(',', $strCountries);
@@ -87,7 +87,7 @@ class Tx_Contexts_Geolocation_Context_Type_Country
             ) {
                 return true;
             }
-        } catch (Tx_Contexts_Geolocation_Exception $exception) {
+        } catch (Tx_ContextsGeolocation_Exception $exception) {
         }
 
         return false;

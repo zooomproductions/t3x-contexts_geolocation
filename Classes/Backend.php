@@ -22,7 +22,7 @@
  * @license    http://opensource.org/licenses/gpl-license GPLv2 or later
  * @link       http://github.com/netresearch/contexts_geolocation
  */
-class Tx_Contexts_Geolocation_Backend
+class Tx_ContextsGeolocation_Backend
 {
     /**
      * Get all countries from static info tables.
@@ -217,8 +217,8 @@ HTM;
     public function setupCheck()
     {
         try {
-            Tx_Contexts_Geolocation_Adapter::getInstance();
-        } catch (Tx_Contexts_Geolocation_Exception $exception) {
+            Tx_ContextsGeolocation_Adapter::getInstance();
+        } catch (Tx_ContextsGeolocation_Exception $exception) {
             t3lib_FlashMessageQueue::addMessage(
                 t3lib_div::makeInstance(
                     't3lib_FlashMessage',

@@ -22,7 +22,7 @@
  * @license    http://opensource.org/licenses/gpl-license GPLv2 or later
  * @link       http://github.com/netresearch/contexts_geolocation
  */
-class Tx_Contexts_Geolocation_Exception extends Exception
+class Tx_ContextsGeolocation_Exception extends Exception
 {
 }
 ?>

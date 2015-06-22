@@ -23,8 +23,8 @@
  * @link       http://github.com/netresearch/contexts_geolocation
  * @uses       http://pear.php.net/package/Net_GeoIP/
  */
-class Tx_Contexts_Geolocation_Adapter_NetGeoIp
-    extends Tx_Contexts_Geolocation_Adapter
+class Tx_ContextsGeolocation_Adapter_NetGeoIp
+    extends Tx_ContextsGeolocation_Adapter
 {
     /**
      * Internal Net_GeoIP instance used for querying country database.
@@ -47,7 +47,7 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
      *
      * @return void
      *
-     * @throws Tx_Contexts_Geolocation_Exception when the database cannot
+     * @throws Tx_ContextsGeolocation_Exception when the database cannot
      *         be found
      */
     private function __construct($ip = null)
@@ -74,7 +74,7 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
         }
 
         if ($dbPath === null) {
-            throw new Tx_Contexts_Geolocation_Exception(
+            throw new Tx_ContextsGeolocation_Exception(
                 'Configured geoip database path does not exist'
             );
         }
@@ -114,7 +114,7 @@ class Tx_Contexts_Geolocation_Adapter_NetGeoIp
      *
      * @param string $ip IP address
      *
-     * @return Tx_Contexts_Geolocation_Adapter_NetGeoIp|null
+     * @return Tx_ContextsGeolocation_Adapter_NetGeoIp|null
      */
     public static function getInstance($ip = null)
     {

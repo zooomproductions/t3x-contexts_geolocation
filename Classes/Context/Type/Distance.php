@@ -32,7 +32,7 @@
  * @license    http://opensource.org/licenses/gpl-license GPLv2 or later
  * @link       http://github.com/netresearch/contexts_geolocation
  */
-class Tx_Contexts_Geolocation_Context_Type_Distance
+class Tx_ContextsGeolocation_Context_Type_Distance
     extends Tx_Contexts_Context_Abstract
 {
     /**
@@ -66,7 +66,7 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
     public function matchDistance()
     {
         try {
-            $geoip = Tx_Contexts_Geolocation_Adapter
+            $geoip = Tx_ContextsGeolocation_Adapter
                 ::getInstance($_SERVER['REMOTE_ADDR']);
 
             $bUnknown   = (bool) $this->getConfValue('field_unknown');
@@ -100,7 +100,7 @@ class Tx_Contexts_Geolocation_Context_Type_Distance
             );
 
             return $flDistance <= ((float) $strMaxDistance);
-        } catch (Tx_Contexts_Geolocation_Exception $exception) {
+        } catch (Tx_ContextsGeolocation_Exception $exception) {
             return false;
         }
     }

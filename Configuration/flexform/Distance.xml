@@ -25,7 +25,7 @@
            <size>40</size>
            <eval>trim,required</eval>
            <form_type>user</form_type>
-           <userFunc>Tx_Contexts_Geolocation_Backend-&gt;inputMapPosition</userFunc>
+           <userFunc>Tx_ContextsGeolocation_Backend-&gt;inputMapPosition</userFunc>
          </config>
        </TCEforms>
      </field_position>
@@ -45,7 +45,7 @@
          <label></label>
          <config>
            <form_type>user</form_type>
-           <userFunc>Tx_Contexts_Geolocation_Backend-&gt;setupCheck</userFunc>
+           <userFunc>Tx_ContextsGeolocation_Backend-&gt;setupCheck</userFunc>
          </config>
        </TCEforms>
      </field_setupCheck>

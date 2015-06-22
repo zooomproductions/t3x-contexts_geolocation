@@ -23,8 +23,8 @@
  * @link       http://github.com/netresearch/contexts_geolocation
  * @uses       http://www.php.net/manual/en/book.geoip.php
  */
-class Tx_Contexts_Geolocation_Adapter_GeoIp
-    extends Tx_Contexts_Geolocation_Adapter
+class Tx_ContextsGeolocation_Adapter_GeoIp
+    extends Tx_ContextsGeolocation_Adapter
 {
     /**
      * Constructor. Protected to prevent direct instanciation.
@@ -53,7 +53,7 @@ class Tx_Contexts_Geolocation_Adapter_GeoIp
      *
      * @param string $ip IP address
      *
-     * @return Tx_Contexts_Geolocation_Adapter_GeoIp|null
+     * @return Tx_ContextsGeolocation_Adapter_GeoIp|null
      */
     public static function getInstance($ip = null)
     {

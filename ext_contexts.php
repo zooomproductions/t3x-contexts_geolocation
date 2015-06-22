@@ -17,19 +17,19 @@ defined('TYPO3_MODE') or die('Access denied.');
 Tx_Contexts_Api_Configuration::registerContextType(
     'geolocation_country',
     'LLL:EXT:contexts_geolocation/Resources/Private/Language/locallang_db.xml:title_country',
-    'Tx_Contexts_Geolocation_Context_Type_Country',
+    'Tx_ContextsGeolocation_Context_Type_Country',
     'FILE:EXT:contexts_geolocation/Configuration/flexform/Country.xml'
 );
 Tx_Contexts_Api_Configuration::registerContextType(
     'geolocation_continent',
     'LLL:EXT:contexts_geolocation/Resources/Private/Language/locallang_db.xml:title_continent',
-    'Tx_Contexts_Geolocation_Context_Type_Continent',
+    'Tx_ContextsGeolocation_Context_Type_Continent',
     'FILE:EXT:contexts_geolocation/Configuration/flexform/Continent.xml'
 );
 Tx_Contexts_Api_Configuration::registerContextType(
     'geolocation_distance',
     'LLL:EXT:contexts_geolocation/Resources/Private/Language/locallang_db.xml:title_distance',
-    'Tx_Contexts_Geolocation_Context_Type_Distance',
+    'Tx_ContextsGeolocation_Context_Type_Distance',
     'FILE:EXT:contexts_geolocation/Configuration/flexform/Distance.xml'
 );
 

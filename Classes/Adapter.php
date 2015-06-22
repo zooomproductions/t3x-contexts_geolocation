@@ -22,7 +22,7 @@
  * @license    http://opensource.org/licenses/gpl-license GPLv2 or later
  * @link       http://github.com/netresearch/contexts_geolocation
  */
-abstract class Tx_Contexts_Geolocation_Adapter
+abstract class Tx_ContextsGeolocation_Adapter
 {
     /**
      * Current IP address.
@@ -36,8 +36,8 @@ abstract class Tx_Contexts_Geolocation_Adapter
      *
      * @param string $ip IP address
      *
-     * @return Tx_Contexts_Geolocation_Adapter
-     * @throws Tx_Contexts_Geolocation_Exception
+     * @return Tx_ContextsGeolocation_Adapter
+     * @throws Tx_ContextsGeolocation_Exception
      */
     public static function getInstance($ip = null)
     {
@@ -47,17 +47,17 @@ abstract class Tx_Contexts_Geolocation_Adapter
             return $instance;
         }
 
-        $instance = Tx_Contexts_Geolocation_Adapter_GeoIp::getInstance($ip);
+        $instance = Tx_ContextsGeolocation_Adapter_GeoIp::getInstance($ip);
         if ($instance !== null) {
             return $instance;
         }
 
-        $instance = Tx_Contexts_Geolocation_Adapter_NetGeoIp::getInstance($ip);
+        $instance = Tx_ContextsGeolocation_Adapter_NetGeoIp::getInstance($ip);
         if ($instance !== null) {
             return $instance;
         }
 
-        throw new Tx_Contexts_Geolocation_Exception(
+        throw new Tx_ContextsGeolocation_Exception(
             'No installed geoip adapter found'
         );
     }
