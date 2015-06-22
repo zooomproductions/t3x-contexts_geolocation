@@ -1,6 +1,7 @@
 2015-06-22  Christian Weiske  <christian.weiske@netresearch.de>
 
 	* Fix class names to for TYPO3 4.5 autoloader
+	* Version 0.4.1
 
 2014-03-07  Christian Weiske  <christian.weiske@netresearch.de>
 
