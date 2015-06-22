@@ -63,3 +63,18 @@ Note that the free geoip database does seldom give you exact locations,
 so this is more a fun experiment rather that it should be used in production.
 
 .. image:: doc/cfg-distance.png
+
+
+=======
+Plugins
+=======
+
+Contexts geolocation: show current position
+===========================================
+Shows a map with a marker at the detected position of the user's IP.
+
+Also shows a dump of other data for this IP, like continent, country and city.
+
+Useful for testing and debugging.
+
+Allows manual IP address input.
