@@ -1,0 +1,15 @@
+{
+    "name": "netresearch/contexts_geolocation",
+    "description": "Contexts for TYPO3 – can be used to modify page behaviour in the frontend based on several conditions",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Netresearch GmbH & Co.KG",
+            "email": "typo3.org@netresearch.de"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "netresearch/contexts": "^0.4.3"
+    }
+}
